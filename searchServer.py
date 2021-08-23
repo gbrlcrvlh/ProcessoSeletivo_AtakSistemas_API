@@ -42,7 +42,7 @@ def googleSearchScrapping(url, data, pagesNumber):
 
 class googleSearch(Resource):
     def get(self):
-        parser = reqparse.RequestParser()  # initialize
+        parser = reqparse.RequestParser()
 
         parser.add_argument(CONST_PARAM_SEARCH_TEXT, required=True)
         parser.add_argument(CONST_PARAM_PAGES_NUMBER, required=True)
